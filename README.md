@@ -23,22 +23,29 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
     ```
 
-1.  **Start developing.**
+1.  **To run dev server**
 
-    Navigate into your new site’s directory and start it up.
+    Navigate to project's directory and type:
 
     ```shell
-    cd my-hello-world-starter/
+    npm i
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+    You can also type `npm start` to run the dev server.
 
-    Your site is now running at `http://localhost:8000`!
+    Your site will run at `http://localhost:8000`.
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+1.  **To build and run prod server**
+
+    You can run `gatsby build` or `npm run build` to build the static site.
+
+    The static files will live in the `/public` directory
+
+    If you'd like to run the built site locally, you can type `gatsby serve` or `npm run serve` in your terminal.
+
+    Your site will then run at `http://localhost:9000`
 
 ## 🧐 What's inside?
 
