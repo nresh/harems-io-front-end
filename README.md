@@ -1,15 +1,12 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
-1.  **To run dev server**
+## Usage for Gatsby App
 
-    Navigate to project's directory and type:
+1.  **To run the site locally**
 
-    ```shell
-    npm i
-    gatsby develop
-    ```
-
-    You can also type `npm start` to run the dev server.
+    Navigate to project's directory and
+    - install packages with `npm i`
+    - start local dev server with `gatsby develop` or `npm run develop`
 
     Your site will run at `http://localhost:8000`.
 
@@ -18,13 +15,13 @@
 
     You can run `gatsby build` or `npm run build` to build the static site.
 
-    The static files will live in the `/public` directory
+    The static files will live in the `/public` inside your project root directory.
 
     If you'd like to run the built site locally, you can type `gatsby serve` or `npm run serve` in your terminal.
 
     Your site will then run at `http://localhost:9000`
 
-## 🧐 What's inside?
+## What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
