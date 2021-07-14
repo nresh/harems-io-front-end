@@ -13,6 +13,30 @@ export default () => {
     max-width: 100%;
   `
 
+  const ImgBoxWithText = ({img, text}) => {
+    return(
+      <Col md={2} className="mb-2">
+        <Row>
+          <Col xs={3} sm={3} md={12}>
+            <Image src={img} />
+          </Col>
+          <Col xs={8} sm={8} md={12} className="align-items-center d-flex justify-content-md-center">
+            <p class=" text-md-center">{text}</p>
+          </Col>
+        </Row>
+      </Col>
+    )
+  }
+
+  const ProgressItem = ({pct, desc}) => {
+    return (
+      <Row>
+        <Col lg={1}>{pct}</Col>
+        <Col lg={10}>{desc}</Col>
+      </Row>
+    )
+  }
+
   return (
     <Layout dark>
       <BackgroundBlock src="home-bg" minHeight="90vh" />
@@ -77,26 +101,11 @@ export default () => {
             </Col>
           </Row>
           <Row className="justify-content-center pb-4 text-center text-small">
-            <Col md={2}>
-              <Image src={"ape.png"} />
-              <p>unmatched!</p>
-            </Col>
-            <Col md={2}>
-              <Image src={"ape.png"} />
-              <p>unique!</p>
-            </Col>
-            <Col md={2}>
-              <Image src={"ape.png"} />
-              <p>valuable!</p>
-            </Col>
-            <Col md={2}>
-              <Image src={"ape.png"} />
-              <p>invaluable!</p>
-            </Col>
-            <Col md={2}>
-              <Image src={"ape.png"} />
-              <p>rare!</p>
-            </Col>
+            <ImgBoxWithText img="ape.png" text="unmatched!" />
+            <ImgBoxWithText img="ape.png" text="unique!" />
+            <ImgBoxWithText img="ape.png" text="rare!" />
+            <ImgBoxWithText img="ape.png" text="valuable!" />
+            <ImgBoxWithText img="ape.png" text="invaluable!" />
           </Row>
         </ContentBlock>
         <ContentBlock id="bathroom">
@@ -120,26 +129,11 @@ export default () => {
           </Row>
           <Row className="pb-4">
             <Col lg={8}>
-              <Row>
-                <Col lg={1}>20%</Col>
-                <Col lg={10}>did something</Col>
-              </Row>
-              <Row>
-                <Col lg={1}>40%</Col>
-                <Col lg={10}>did more</Col>
-              </Row>
-              <Row>
-                <Col lg={1}>60%</Col>
-                <Col lg={10}>impressive</Col>
-              </Row>
-              <Row>
-                <Col lg={1}>80%</Col>
-                <Col lg={10}>almost done</Col>
-              </Row>
-              <Row>
-                <Col lg={1}>100%</Col>
-                <Col lg={10}>done</Col>
-              </Row>
+              <ProgressItem pct="20%" desc="did something" />
+              <ProgressItem pct="40%" desc="did more" />
+              <ProgressItem pct="60%" desc="did something impressive" />
+              <ProgressItem pct="80%" desc="almost done" />
+              <ProgressItem pct="20%" desc="done" />
             </Col>
             <Col lg={3} className="offset-lg-1" >
               <Image src={"ape.png"} />
