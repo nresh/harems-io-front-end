@@ -9,14 +9,14 @@ export default ({ children }) => {
 
   return (
       <Container fluid="sm">
-        <Row className="justify-content-end">
-          <Col className="center-content my-4 text-left" lg={4} xs="auto">
+        <Row className="justify-content-end py-4">
+          <Col className="center-content text-md-center text-lg-left" lg={4} sm={12}>
             <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>GET THE LATEST</Form.Label>
                 <Row className="py-3">
                   <Col>
-                    <Form.Control className="d-inline-block w-50" type="email" placeholder="Email Address" />
+                    <Form.Control className="d-inline-block w-75" type="email" placeholder="Email Address" />
                     <Button className="p-2 w-30" variant="primary" type="submit">--></Button>
                   </Col>
                 </Row>
@@ -27,10 +27,10 @@ export default ({ children }) => {
             </Form>
 
           </Col>
-          <Col className="center-content my-4 text-center" lg={4} xs="auto">
+          <Col className="center-content text-center" lg={4} sm={12}>
             <Logo src={"header-logo.svg"} alt="Harems logo"/>
           </Col>
-          <Col className="center-content my-4 text-center" lg={4} xs="auto">
+          <Col className="center-content text-center" lg={4} sm={12}>
             &#169; HaremsIO 2021
           </Col>
         </Row>
