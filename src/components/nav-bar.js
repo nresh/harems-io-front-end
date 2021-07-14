@@ -15,8 +15,7 @@ export default () => {
 
   const DarkBar = styled(Navbar)`
     background-color: black;
-    /* display: flex; */
-    height: 100px;
+    min-height: 100px;
   `;
 
   return (

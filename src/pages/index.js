@@ -11,8 +11,6 @@ export default () => {
   const Image = styled.img`
     height: auto;
     max-width: 100%;
-    padding-bottom: 8px;
-    padding-right: 8px;
   `
 
   return (
