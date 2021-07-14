@@ -1,0 +1,25 @@
+$light-color: white;
+$primary-font-family: "Avenir Next";
+$secondary-font-family: "Avenir Next";
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.center-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.green-bg {
+  background-color: #73bf90;
+    color: black;
+}
+
+.text-small {
+  font-size: 0.6em;
+}
