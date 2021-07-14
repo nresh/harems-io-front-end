@@ -15,7 +15,7 @@
 
     You can run `gatsby build` or `npm run build` to build the static site.
 
-    The static files will live in the `/public` inside your project root directory.
+    The static files will live in the `/public` directory of your project's root directory.
 
     If you'd like to run the built site locally, you can type `gatsby serve` or `npm run serve` in your terminal.
 
