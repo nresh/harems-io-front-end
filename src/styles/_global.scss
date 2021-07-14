@@ -1,0 +1,93 @@
+$light-color: white;
+$primary-font-family: "Avenir Next";
+$secondary-font-family: "Avenir Next";
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.center-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.bottom-content {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+
+.gray-bg {
+  background-color: #bfbfbf;
+  p {
+    color: #123c5c
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.text-small {
+  font-size: 0.6em;
+  text-transform: uppercase;
+}
+
+.white-bg {
+  background-color: #ffffff;
+  color: #707070;
+}
+
+// mobile
+@media screen and (max-width: 768px) {
+  .hide-mobile {
+    display:none;
+  }
+}
+
+/* may need this later, but right now just using bootstrap cols... */
+$services-nav-height: 193px;
+$services-nav-width: 290px;
+$max-width: ($services-nav-height + $services-nav-width);
+
+$services-nav-height-frac: $services-nav-height / $max-width;
+$services-nav-width-frac: $services-nav-width / $max-width;
+
+.services-nav .nav-item {
+  height: $services-nav-height;
+  width: $services-nav-width;
+}
+
+
+@media screen and (max-width: 768px) {
+  $max-width: $max-width * 0.85;
+
+  .services-nav .nav-item {
+    height: $services-nav-height-frac * $max-width;
+    width: $services-nav-width-frac * $max-width;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  $max-width: $max-width * 0.65;
+
+  .services-nav .nav-item {
+    height: $services-nav-height-frac * $max-width;
+    width: $services-nav-width-frac * $max-width;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  $max-width: $max-width * 0.55;
+
+  .services-nav .nav-item {
+    height: $services-nav-height-frac * $max-width;
+    width: $services-nav-width-frac * $max-width;
+  }
+
+}
