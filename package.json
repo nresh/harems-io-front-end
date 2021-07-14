@@ -1,5 +1,5 @@
 {
-  "name": "harems.io front end",
+  "name": "harems-io-front-end",
   "private": true,
   "description": "some info, and forms for referrals and contact",
   "version": "0.1.13",
@@ -19,7 +19,6 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "bootstrap": "^4.5.3",
-    "formik": "^2.2.6",
     "gatsby": "^2.26.1",
     "gatsby-background-image": "^1.3.1",
     "gatsby-plugin-emotion": "^5.0.0",
@@ -33,9 +32,7 @@
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
-    "react-maskedinput": "^4.0.1",
-    "sass": "^1.35.2",
-    "yup": "^0.32.8"
+    "sass": "^1.35.2"
   },
   "devDependencies": {
     "prettier": "2.1.2"

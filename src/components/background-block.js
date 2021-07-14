@@ -2,6 +2,16 @@ import BackgroundImage from 'gatsby-background-image'
 import { graphql, useStaticQuery } from 'gatsby'
 import React from "react"
 
+/*
+  this component is essentially a wrapper for Gatsby's BackgroundImage component
+  which has a bunch of built in features to optimally load normally-expensive images.
+
+  it is explained here https://www.gatsbyjs.com/plugins/gatsby-background-image/
+
+  there is also a corresponding https://www.gatsbyjs.com/plugins/gatsby-image/ for
+  regular images (<img />) that pretty much does the same thing, but it is not
+  installed in this app.
+*/
 export default (props) => {
   const fileName = props.src;
   const data = useStaticQuery(
