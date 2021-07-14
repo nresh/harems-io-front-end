@@ -1,6 +1,9 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
-## Usage for Gatsby App
+## Live Demo of Site (hosted on AWS Amplify)
+https://main.dqlawzyoy6p51.amplifyapp.com
+
+## Usage for running Gatsby App locally
 
 1.  **To run the site locally**
 
@@ -21,7 +24,22 @@
 
     Your site will then run at `http://localhost:9000`
 
-## What's inside?
+## Modifying components and content
+- Gatsby organizes a website based on whats in `/src/pages`
+
+- for this SPA there is currently only the home page which lives in `/src/pages/index.js` - that is where pretty much all the components are invoked and all the content lives. in the future it may be good to separate that content into markdown mdx files that allow you to combine jsx with markdown
+
+- much of the page's spacing/styling is achieved thru react-bootstrap https://react-bootstrap.github.io/
+
+- as far as components there is basically
+  1. `Layout`: which has a `Header` and `Footer` and is wrapped around all the pages
+  1. `Header`: uses `Helmet` to add some scripts for e.g. social icons
+  1. `Footer`: basically has 3 columns of content, including the form for email submissions
+  1. `BackgroundBlock`: a wrapper for using Gatsby's `BackgroundImage` component, which is useful for loading expensive images smoothly
+  1. `ContentBlock`: which is essentially the building block for all the rows on the home page
+  1. `NavBar`: lives in the `Header` and has two sets of nav links - one to navigate on the page and the other for external social links
+
+## Gatsby Structure
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
