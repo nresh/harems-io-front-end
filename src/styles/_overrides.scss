@@ -12,15 +12,14 @@ h1, h2 {
 }
 
 h1 {
-  font-family: "century-gothic";
-  font-size: 1.5em;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: 700;
 }
 
 h2 {
   color: $light-color;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 700;
 }
 
@@ -44,6 +43,11 @@ ul {
 }
 
 // bootstrap overrides
+.btn-primary.disabled {
+  background-color: black;
+  opacity: 1;
+}
+
 .btn-primary {
   background-color: #115f98;
   border: none;

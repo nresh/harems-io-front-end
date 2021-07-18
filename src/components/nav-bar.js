@@ -1,3 +1,4 @@
+// import logoImg from "../images/Harems-2.png"
 import { Nav, Navbar } from "react-bootstrap"
 import React from "react"
 import styled from "@emotion/styled"
@@ -22,9 +23,9 @@ export default () => {
     <DarkBar collapseOnSelect expand="lg" variant="dark">
         <Navbar.Brand href="/" className="d-contents py-0">
           <Logo
-            src={"header-logo.svg"}
+            src={"Harems-2-small.png"}
             className=""
-            alt="Harems IO Logo"
+            alt="Harems Logo"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -35,10 +36,10 @@ export default () => {
             <UpperLink href="/#team">Team</UpperLink>
           </Nav>
           <Nav id="social-links" className="ml-5">
-            <UpperLink href="/"><i class="fa fa-youtube-play social-icon pr-lg-0"></i></UpperLink>
-            <UpperLink href="/"><i class="fa fa-instagram social-icon pr-lg-0"></i></UpperLink>
-            <UpperLink href="/"><i class="fa fa-discord-alt social-icon pr-lg-0"></i></UpperLink>
-            <UpperLink href="/"><i class="fa fa-twitter social-icon pr-lg-0"></i></UpperLink>
+            <UpperLink href="/"><i className="fa fa-youtube-play social-icon pr-lg-0"></i></UpperLink>
+            <UpperLink href="/"><i className="fa fa-instagram social-icon pr-lg-0"></i></UpperLink>
+            <UpperLink href="/"><i className="fa fa-discord-alt social-icon pr-lg-0"></i></UpperLink>
+            <UpperLink href="/"><i className="fa fa-twitter social-icon pr-lg-0"></i></UpperLink>
           </Nav>
         </Navbar.Collapse>
     </DarkBar>

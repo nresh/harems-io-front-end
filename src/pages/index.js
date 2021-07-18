@@ -1,10 +1,28 @@
 import BackgroundBlock from "../components/background-block"
 import ContentBlock from "../components/content-block"
 import { Button, Col, Container, Row } from "react-bootstrap"
+import IntroMDX from "../content/intro"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import React from "react"
+import TextImgSection from "../components/text-img-section"
+import CallToActionBanner from "../components/call-to-action-banner"
 import styled from "@emotion/styled"
+
+
+const SECTIONS = [
+  { id:"intro",
+    subSections: [
+      {
+        component: TextImgSection,
+        attr: {markdown: IntroMDX, img: "4.jpg", hColors: ['#FF99CC', '#8FAADC']}
+      },
+      {
+        component: CallToActionBanner, attr: {}
+      }
+    ]
+  }
+]
 
 export default () => {
 
@@ -21,7 +39,7 @@ export default () => {
             <Image src={img} />
           </Col>
           <Col xs={8} sm={8} md={12} className="align-items-center d-flex justify-content-md-center">
-            <p class=" text-md-center">{text}</p>
+            <p className=" text-md-center">{text}</p>
           </Col>
         </Row>
       </Col>
@@ -40,50 +58,25 @@ export default () => {
   return (
     <Layout dark>
       <BackgroundBlock src="home-bg" minHeight="90vh" />
-      <Container fluid className="black-bg pt-4 text-left">
-        <ContentBlock id="buy">
-          <Row className="justify-content-center pb-4">
-            <Col lg={7}>
-              <h1 className="pb-4">Buy Harems</h1>
-              <p>Harems is the next big thing in the NFT space!</p>
-              <p>blah blah blah</p>
-            </Col>
-            <Col lg={4} className="offset-lg-1">
-              <Row>
-                <Col className="pb-2 pr-2"><Image src={"ape.png"} /></Col>
-                <Col className="pb-2 pl-2"><Image src={"ape.png"} /></Col>
-              </Row>
-              <Row>
-                <Col className="pt-2 pr-2"><Image src={"ape.png"} /></Col>
-                <Col className="pt-2 pl-2"><Image src={"ape.png"} /></Col>
-              </Row>
-            </Col>
-          </Row>
-          <Row className="justify-content-center pb-4">
-            <Col lg={7}>
-              <h1 className="pb-4">Fair Distribution</h1>
-              <p>There are no bonding curves here. Buying a Bored Ape costs 0.08 ETH. There are no price tiers; BAYC membership costs the same for everyone.</p>
-            </Col>
-            <Col lg={4} className="offset-lg-1">
-              <p style={{fontStyle: "italic"}}>Note: Thirty apes are being withheld from the sale. These will be used for giveaways, puzzle rewards—and for the creators' BAYC memberships.</p>
-            </Col>
-          </Row>
-          <Row className="green-bg justify-content-center">
-            <Col className="my-4 text-center" lg={4} xs="auto">
-              Buy!!
-            </Col>
-            <Col className="my-4 text-center" lg={4} xs="auto">
-              The initial sale has sold out. To get your thing, checkout the collection.
-            </Col>
-            <Col className="my-4 text-center" lg={4} xs="auto">
-              <Button href="/" variant="primary">Buy on Open Sea</Button>
-            </Col>
-          </Row>
-        </ContentBlock>
+      <StyledContainer fluid className="black-bg pt-4 text-left">
+        {
+          SECTIONS.map((section) => {
+            return(
+              <ContentBlock id={section.id} key={section.id}>
+                {
+                  section.subSections.map((subSection) => {
+                    const Section = subSection.component;
+                    return <Section {...subSection.attr} />
+                  })
+                }
+              </ContentBlock>
+            )
+          })
+        }
         <ContentBlock id="specs">
           <Row className="justify-content-center pb-4">
             <Col lg={7}>
-              <h1 className="pb-4">Specs</h1>
+              <h1>Specs</h1>
               <p>This is how it works...</p>
               <p>We use ERC tokens blah blah...</p>
               <p>Member only area can be found in <Link to="/">here</Link></p>
@@ -96,7 +89,7 @@ export default () => {
         <ContentBlock id="welcome">
           <Row className="justify-content-center pb-4">
             <Col>
-            <h1 className="pb-4">Welcome</h1>
+            <h1>Welcome</h1>
             <p>When you buy harems..</p>
             </Col>
           </Row>
@@ -111,7 +104,7 @@ export default () => {
         <ContentBlock id="bathroom">
           <Row className="justify-content-center pb-4">
             <Col lg={9}>
-              <h1 className="pb-4">Bathroom</h1>
+              <h1>Bathroom</h1>
               <p>Do your business</p>
               <p>...and paint</p>
             </Col>
@@ -123,7 +116,7 @@ export default () => {
         <ContentBlock id="roadmap">
           <Row className="pb-4">
             <Col>
-              <h1 className="pb-4">Roadmap</h1>
+              <h1>Roadmap</h1>
               <p>lots to dooo</p>
             </Col>
           </Row>
@@ -143,7 +136,7 @@ export default () => {
         <ContentBlock id="tools">
           <Row className="justify-content-center pb-4">
             <Col lg={8}>
-              <h1 className="pb-4">Tools</h1>
+              <h1>Tools</h1>
               <p>Some helpful stuff...</p>
             </Col>
             <Col lg={3} className="m-lg-auto offset-lg-1" >
@@ -161,7 +154,7 @@ export default () => {
         <ContentBlock id="team">
           <Row className="justify-content-center pb-4">
             <Col lg={7}>
-              <h1 className="pb-4">The Team</h1>
+              <h1>The Team</h1>
               <p>We are awesome</p>
               <p>...and interesting</p>
             </Col>
@@ -182,7 +175,34 @@ export default () => {
             </Col>
           </Row>
         </ContentBlock>
-      </Container>
+      </StyledContainer>
     </Layout>
   )
 }
+
+const StyledContainer = styled(Container)`
+  /* .content-block:nth-child(1n) {
+    h1:nth-of-type(1){color: #FF99CC}
+    h1:nth-of-type(2){color: #8FAADC}
+  } */
+  /* .content-block:nth-child(2n) {
+    h1 {color: #FFFF00}
+  }
+  .content-block:nth-child(3n) {
+    h1 {color: #FFC000}
+  }
+  .content-block:nth-child(4n) {
+    h1 {color: #00B0F0}
+  }
+  .content-block:nth-child(5n) {
+    h1 {color: #00B050}
+  }
+  .content-block:nth-child(6n) {
+    .sub-block:nth-child(1) {h1 {color: #7030A0}}
+    .sub-block:nth-child(2) {h1 {color: #8FAADC}}
+  }
+  .content-block:nth-child(7n) {
+    h1 {color: #C709C7}
+  } */
+
+`

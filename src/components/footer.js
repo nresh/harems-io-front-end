@@ -28,10 +28,10 @@ export default ({ children }) => {
 
           </Col>
           <Col className="center-content text-center" lg={4} sm={12}>
-            <Logo src={"header-logo.svg"} alt="Harems logo"/>
+            <Logo src={"Harems-2-small.png"} alt="Harems logo"/>
           </Col>
           <Col className="center-content text-center" lg={4} sm={12}>
-            &#169; HaremsIO 2021
+            &#169; Harems.IO {new Date().getFullYear()}
           </Col>
         </Row>
       </Container>
