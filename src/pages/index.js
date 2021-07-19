@@ -88,7 +88,7 @@ export default () => {
   return (
     <Layout dark>
       <BackgroundBlock className="align-items-end d-flex justify-content-center" src="home-bg" minHeight="90vh">
-        <CallToActionBanner className="black-bg" text={<h1>Get the Latest</h1>} cta={<EmailForm id="top-email-form" hideLabel />} />
+        <CallToActionBanner className="black-bg" left={7} right={4} text={<h1>Get the Latest</h1>} cta={<EmailForm id="top-email-form" hideLabel />} />
       </BackgroundBlock>
       <Container fluid className="black-bg border-top pt-4 text-left">
         {

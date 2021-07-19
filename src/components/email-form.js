@@ -4,7 +4,7 @@ import React from "react"
 export default ({ id, hideLabel, children }) => {
   return (
     <Form id={id}>
-      <Form.Group className="mb-3 text-left" controlId="formBasicEmail">
+      <Form.Group className="mb-3 text-lg-left" controlId="formBasicEmail">
         {
           hideLabel || <Form.Label>GET THE LATEST</Form.Label>
         }
