@@ -7,7 +7,7 @@ export default ({ id, className, left, right, text, cta, children }) => {
       <Col className="my-4 text-center" lg={left || 8} xs="auto">
         {text}
       </Col>
-      <Col className="my-4 text-center" lg={right || 4} xs="auto">
+      <Col className="mb-4 mt-md-4 text-center" lg={right || 4} xs="auto">
         {cta}
       </Col>
     </Row>
