@@ -50,14 +50,6 @@ const SECTIONS = [
       }
     ]
   },
-  { id:"info3",
-    subSections: [
-      {
-        component: TextImgSection,
-        attr: {markdown: Info3MDX, img: "rare-harem", hColors: ['#00B050']}
-      }
-    ]
-  },
   { id:"gentlemans-club",
     subSections: [
       {

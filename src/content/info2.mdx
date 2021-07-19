@@ -1,9 +1,11 @@
+import { Col, Row } from "react-bootstrap"
+
 # 10 Different Types
 
-Each Harem Girl will have 4 unique NFTs shown for each of the following types:
+Each Harem Girl will have unique NFTs shown for each of the following types of girl:
 
-<div class="py-2 row">
-<div class="col-4 offset-1">
+<Row className="py-2">
+<Col className="offset-1" md={3} sm={4} xs={5}>
 
 - Sugar Baby
 - Stripper
@@ -11,8 +13,8 @@ Each Harem Girl will have 4 unique NFTs shown for each of the following types:
 - Hoe
 - Escort
 
-</div>
-<div class="col-4">
+</Col>
+<Col md={4} xs="auto">
 
 - Model
 - Dominatrix
@@ -20,8 +22,5 @@ Each Harem Girl will have 4 unique NFTs shown for each of the following types:
 - Sidechick
 - Barely Legal
 
-</div>
-</div>
-
-And if you’re doing the math (and I know you are because gentlemen know their
-arithmetic) – that means there's one remaining NFT for each Harem Girl.
+</Col>
+</Row>
