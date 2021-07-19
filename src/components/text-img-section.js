@@ -1,10 +1,13 @@
 import { Col, Row } from "react-bootstrap"
 import React from "react"
+
+import RasterImg from "./raster-img"
+
 import styled from "@emotion/styled"
 
 export default ({ markdown, img, hColors, children }) => {
   const Markdown = markdown;
-  const Image = styled.img`
+  const Image = styled(RasterImg)`
     height: auto;
     width: 100%;
   `
