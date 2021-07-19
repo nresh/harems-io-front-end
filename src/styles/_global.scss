@@ -1,5 +1,5 @@
 $light-color: white;
-$primary-font-family: "Avenir Next";
+$primary-font-family: "Times New Roman";
 $secondary-font-family: "Avenir Next";
 
 .app-container {
@@ -15,9 +15,14 @@ $secondary-font-family: "Avenir Next";
   text-align: center;
 }
 
-.green-bg {
-  background-color: #73bf90;
-    color: black;
+.black-bg {
+  background-color: #000000;
+  color: white;
+}
+
+.blue-bg {
+  background-color: #00B0F0;
+  color: white;
 }
 
 .text-small {

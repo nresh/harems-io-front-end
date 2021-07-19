@@ -19,26 +19,26 @@ export default () => {
   `;
 
   return (
-    <DarkBar collapseOnSelect expand="lg" variant="dark">
+    <DarkBar className="p-xl-0" collapseOnSelect expand="lg" variant="dark">
         <Navbar.Brand href="/" className="d-contents py-0">
           <Logo
-            src={"header-logo.svg"}
+            src={"Harems-2-small.png"}
             className=""
-            alt="Harems IO Logo"
+            alt="Harems Logo"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
           <Nav id="home-nav">
-            <UpperLink href="/#buy">Buy</UpperLink>
+            <UpperLink href="/#buy-on-open-sea">Buy</UpperLink>
             <UpperLink href="/#roadmap">Roadmap</UpperLink>
             <UpperLink href="/#team">Team</UpperLink>
           </Nav>
           <Nav id="social-links" className="ml-5">
-            <UpperLink href="/"><i class="fa fa-youtube-play social-icon pr-lg-0"></i></UpperLink>
-            <UpperLink href="/"><i class="fa fa-instagram social-icon pr-lg-0"></i></UpperLink>
-            <UpperLink href="/"><i class="fa fa-discord-alt social-icon pr-lg-0"></i></UpperLink>
-            <UpperLink href="/"><i class="fa fa-twitter social-icon pr-lg-0"></i></UpperLink>
+            <UpperLink href="/"><i className="fa fa-youtube-play social-icon pr-lg-0"></i></UpperLink>
+            <UpperLink href="/"><i className="fa fa-instagram social-icon pr-lg-0"></i></UpperLink>
+            <UpperLink href="/"><i className="fa fa-discord-alt social-icon pr-lg-0"></i></UpperLink>
+            <UpperLink href="/"><i className="fa fa-twitter social-icon pr-lg-0"></i></UpperLink>
           </Nav>
         </Navbar.Collapse>
     </DarkBar>
