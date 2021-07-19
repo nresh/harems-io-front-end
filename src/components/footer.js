@@ -1,5 +1,8 @@
-import { Button, Col, Container, Form, Row } from "react-bootstrap"
+import { Col, Container, Row } from "react-bootstrap"
 import React from "react"
+
+import EmailForm from "./email-form"
+
 import styled from "@emotion/styled"
 
 export default ({ children }) => {
@@ -11,21 +14,7 @@ export default ({ children }) => {
       <Container fluid="sm">
         <Row className="justify-content-end py-4">
           <Col className="center-content text-md-center text-lg-left" lg={4} sm={12}>
-            <Form>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>GET THE LATEST</Form.Label>
-                <Row className="pt-3">
-                  <Col>
-                    <Form.Control className="d-inline-block w-75" type="email" placeholder="Email Address" />
-                    <Button className="p-2 w-30" variant="primary" type="submit">&rarr;</Button>
-                  </Col>
-                </Row>
-                <Form.Text className="text-muted">
-                  We keep your email private.
-                </Form.Text>
-              </Form.Group>
-            </Form>
-
+            <EmailForm id="footer-email-form" />
           </Col>
           <Col className="center-content text-center" lg={4} sm={12}>
             <Logo src={"Harems-2-small.png"} alt="Harems logo"/>

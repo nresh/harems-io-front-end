@@ -1,4 +1,3 @@
-// import logoImg from "../images/Harems-2.png"
 import { Nav, Navbar } from "react-bootstrap"
 import React from "react"
 import styled from "@emotion/styled"
@@ -20,7 +19,7 @@ export default () => {
   `;
 
   return (
-    <DarkBar collapseOnSelect expand="lg" variant="dark">
+    <DarkBar className="p-xl-0" collapseOnSelect expand="lg" variant="dark">
         <Navbar.Brand href="/" className="d-contents py-0">
           <Logo
             src={"Harems-2-small.png"}

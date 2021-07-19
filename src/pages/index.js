@@ -1,9 +1,9 @@
-import { Container } from "react-bootstrap"
-import { Link } from "gatsby"
+import { Button, Container } from "react-bootstrap"
 import React from "react"
 
 import BackgroundBlock from "../components/background-block"
 import ContentBlock from "../components/content-block"
+import EmailForm from "../components/email-form"
 import Layout from "../components/layout"
 import TextImgSection from "../components/text-img-section"
 import CallToActionBanner from "../components/call-to-action-banner"
@@ -16,9 +16,6 @@ import GentlemansClubMDX from "../content/gentlemans-club"
 import RoadmapMDX from "../content/roadmap"
 import TeamMDX from "../content/team"
 
-import styled from "@emotion/styled"
-
-
 const SECTIONS = [
   { id:"intro",
     subSections: [
@@ -27,7 +24,13 @@ const SECTIONS = [
         attr: {markdown: IntroMDX, img: "4.jpg", hColors: ['#FF99CC', '#8FAADC']}
       },
       {
-        component: CallToActionBanner, attr: {id:"buy-on-open-sea"}
+        component: CallToActionBanner,
+        attr: {
+          id: "buy-on-open-sea",
+          className: "blue-bg",
+          text: <h2>BUY OUR ALPHA GIRL<br />COLLECTION ON OPEN SEA</h2>,
+          cta: <Button href="/" variant="primary" disabled><h1>Coming Soon</h1></Button>
+        }
       }
     ]
   },
@@ -71,7 +74,6 @@ const SECTIONS = [
       }
     ]
   },
-  ,
   { id:"team",
     subSections: [
       {
@@ -85,16 +87,18 @@ const SECTIONS = [
 export default () => {
   return (
     <Layout dark>
-      <BackgroundBlock src="home-bg" minHeight="90vh" />
-      <Container fluid className="black-bg pt-4 text-left">
+      <BackgroundBlock className="align-items-end d-flex justify-content-center" src="home-bg" minHeight="90vh">
+        <CallToActionBanner className="black-bg" text={<h1>Get the Latest</h1>} cta={<EmailForm id="top-email-form" hideLabel />} />
+      </BackgroundBlock>
+      <Container fluid className="black-bg border-top pt-4 text-left">
         {
           SECTIONS.map((section) => {
             return(
               <ContentBlock id={section.id} key={section.id}>
                 {
-                  section.subSections.map((subSection) => {
+                  section.subSections.map((subSection, i) => {
                     const Section = subSection.component;
-                    return <Section {...subSection.attr} />
+                    return <Section key={i} {...subSection.attr} />
                   })
                 }
               </ContentBlock>
