@@ -38,7 +38,7 @@ export default (props) => {
   return(
     <BackgroundImage
       Tag="div"
-      className="center-content"
+      className={props.className}
       fluid={image}
       style={{
         backgroundPosition: props.position || "top",
