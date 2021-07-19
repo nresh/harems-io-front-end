@@ -14,14 +14,14 @@ export default ({ children }) => {
             <Form>
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>GET THE LATEST</Form.Label>
-                <Row className="py-3">
+                <Row className="pt-3">
                   <Col>
                     <Form.Control className="d-inline-block w-75" type="email" placeholder="Email Address" />
-                    <Button className="p-2 w-30" variant="primary" type="submit">--></Button>
+                    <Button className="p-2 w-30" variant="primary" type="submit">&rarr;</Button>
                   </Col>
                 </Row>
                 <Form.Text className="text-muted">
-                  Privacy is good
+                  We keep your email private.
                 </Form.Text>
               </Form.Group>
             </Form>
@@ -31,7 +31,7 @@ export default ({ children }) => {
             <Logo src={"Harems-2-small.png"} alt="Harems logo"/>
           </Col>
           <Col className="center-content text-center" lg={4} sm={12}>
-            &#169; Harems.IO {new Date().getFullYear()}
+            &#169; Harems.io {new Date().getFullYear()}
           </Col>
         </Row>
       </Container>

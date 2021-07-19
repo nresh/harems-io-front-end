@@ -6,7 +6,7 @@ export default ({ markdown, img, hColors, children }) => {
   const Markdown = markdown;
   const Image = styled.img`
     height: auto;
-    max-width: 100%;
+    width: 100%;
   `
 
   let hStyles = {};
