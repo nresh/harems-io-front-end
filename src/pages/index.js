@@ -21,7 +21,7 @@ const SECTIONS = [
     subSections: [
       {
         component: TextImgSection,
-        attr: {markdown: IntroMDX, img: "4", hColors: ['#FF99CC', '#8FAADC']}
+        attr: {markdown: IntroMDX, img: "4-small", hColors: ['#FF99CC', '#8FAADC']}
       },
       {
         component: CallToActionBanner,
@@ -38,7 +38,7 @@ const SECTIONS = [
     subSections: [
       {
         component: TextImgSection,
-        attr: {markdown: Info1MDX, img: "8", hColors: ['#FFFF00', '#FFC000']}
+        attr: {markdown: Info1MDX, img: "8-small", hColors: ['#FFFF00', '#FFC000']}
       }
     ]
   },
@@ -46,7 +46,7 @@ const SECTIONS = [
     subSections: [
       {
         component: TextImgSection,
-        attr: {markdown: Info2MDX, img: "11", hColors: ['#FFFF00', '#FFC000']}
+        attr: {markdown: Info2MDX, img: "11-small", hColors: ['#FFFF00', '#FFC000']}
       }
     ]
   },
@@ -62,7 +62,7 @@ const SECTIONS = [
     subSections: [
       {
         component: TextImgSection,
-        attr: {markdown: GentlemansClubMDX, img: "4", hColors: ['#7030A0', '#FFC000']}
+        attr: {markdown: GentlemansClubMDX, img: "4-small", hColors: ['#7030A0', '#FFC000']}
       }
     ]
   },
@@ -70,7 +70,7 @@ const SECTIONS = [
     subSections: [
       {
         component: TextImgSection,
-        attr: {markdown: RoadmapMDX, img: "7", hColors: ['#C709C7']}
+        attr: {markdown: RoadmapMDX, img: "7-small", hColors: ['#C709C7']}
       }
     ]
   },
@@ -78,7 +78,7 @@ const SECTIONS = [
     subSections: [
       {
         component: TextImgSection,
-        attr: {markdown: TeamMDX, img: "9", hColors: ['#FFFF00']}
+        attr: {markdown: TeamMDX, img: "9-small", hColors: ['#FFFF00']}
       }
     ]
   }
