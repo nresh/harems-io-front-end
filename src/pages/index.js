@@ -54,7 +54,7 @@ const SECTIONS = [
     subSections: [
       {
         component: TextImgSection,
-        attr: {markdown: GentlemansClubMDX, img: "4-small", hColors: ['#7030A0', '#FFC000']}
+        attr: {markdown: GentlemansClubMDX, img: "24-small", hColors: ['#7030A0', '#FFC000']}
       }
     ]
   },
