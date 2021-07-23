@@ -36,7 +36,7 @@ export default () => {
           </Nav>
           <Nav id="social-links" className="ml-5">
             <UpperLink href="https://t.me/haremsglobal"><i class="fa fa-telegram" aria-hidden="true"></i></UpperLink>
-            <UpperLink href="https://discord.gg/URNvuAMZ/"><i className="fa fa-discord-alt social-icon pr-lg-0"></i></UpperLink>
+            <UpperLink href="https://discord.gg/xD993YTJpe"><i className="fa fa-discord-alt social-icon pr-lg-0"></i></UpperLink>
             <UpperLink href="https://twitter.com/haremsnft/"><i className="fa fa-twitter social-icon pr-lg-0"></i></UpperLink>
           </Nav>
         </Navbar.Collapse>
