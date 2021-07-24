@@ -20,13 +20,7 @@ const path = require(`path`)
          name: `images`,
          path: path.join(__dirname, `src`, `images`),
        },
-       resolve: `gatsby-plugin-google-gtag`,
-       options: {
-         // You can add multiple tracking ids and a pageview event will be fired for all of them.
-         trackingIds: [
-           "G-8MV4EPB9KJ", // Google Analytics / GA
-         ],
-       },
+    
        // options: {
        //   path: `${__dirname}/gatsby-config.js`,
        // },
