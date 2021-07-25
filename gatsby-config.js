@@ -29,9 +29,9 @@ const path = require(`path`)
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "G-8MV4EPB9KJ",
+        trackingId: "G-FQY2XNW03X",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
+        head: true,
       },
     },
    ],
