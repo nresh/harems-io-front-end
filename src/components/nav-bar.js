@@ -30,7 +30,7 @@ export default () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
           <Nav id="home-nav">
-            <UpperLink href="/#buy-on-open-sea">Buy</UpperLink>
+            <UpperLink href="https://opensea.io/collection/haremsalphaog">Buy</UpperLink>
             <UpperLink href="/#roadmap">Roadmap</UpperLink>
             <UpperLink href="/#team">Team</UpperLink>
           </Nav>
