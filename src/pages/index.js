@@ -11,7 +11,6 @@ import CallToActionBanner from "../components/call-to-action-banner"
 import IntroMDX from "../content/intro"
 import Info1MDX from "../content/info1"
 import Info2MDX from "../content/info2"
-import Info3MDX from "../content/info3"
 import GentlemansClubMDX from "../content/gentlemans-club"
 import RoadmapMDX from "../content/roadmap"
 import TeamMDX from "../content/team"
@@ -76,7 +75,7 @@ const SECTIONS = [
   }
 ]
 
-export default () => {
+const HomePage = () => {
   return (
     <Layout dark>
       <BackgroundBlock className="align-items-end d-flex justify-content-center" src="home-bg" minHeight="90vh">
@@ -101,3 +100,5 @@ export default () => {
     </Layout>
   )
 }
+
+export default HomePage;

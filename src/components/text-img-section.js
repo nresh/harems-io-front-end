@@ -5,7 +5,7 @@ import RasterImg from "./raster-img"
 
 import styled from "@emotion/styled"
 
-export default ({ markdown, img, hColors, children }) => {
+const TextImgSection = ({ markdown, img, hColors, children }) => {
   const Markdown = markdown;
   const Image = styled(RasterImg)`
     height: auto;
@@ -35,3 +35,5 @@ export default ({ markdown, img, hColors, children }) => {
     </StyledRow>
   )
 }
+
+export default TextImgSection;
