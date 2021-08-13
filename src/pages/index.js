@@ -29,7 +29,7 @@ const SECTIONS = [
           id: "buy-on-open-sea",
           className: "blue-bg",
           text: <h2>BUY OUR ALPHA GIRL<br />COLLECTION ON OPEN SEA</h2>,
-          cta: <Button href="/" variant="primary" disabled><h1>Coming Soon</h1></Button>
+          cta: <Button href="https://opensea.io/collection/haremsalphaog" variant="primary" enabled><h1>Buy Now</h1></Button>
         }
       }
     ]
@@ -54,7 +54,7 @@ const SECTIONS = [
     subSections: [
       {
         component: TextImgSection,
-        attr: {markdown: GentlemansClubMDX, img: "4-small", hColors: ['#7030A0', '#FFC000']}
+        attr: {markdown: GentlemansClubMDX, img: "24-small", hColors: ['#7030A0', '#FFC000']}
       }
     ]
   },

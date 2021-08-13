@@ -20,9 +20,19 @@ const path = require(`path`)
          name: `images`,
          path: path.join(__dirname, `src`, `images`),
        },
+    
        // options: {
        //   path: `${__dirname}/gatsby-config.js`,
        // },
-     }
+     },
+     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "G-FQY2XNW03X",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+      },
+    },
    ],
  }

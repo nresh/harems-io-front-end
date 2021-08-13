@@ -30,15 +30,14 @@ export default () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
           <Nav id="home-nav">
-            <UpperLink href="/#buy-on-open-sea">Buy</UpperLink>
+            <UpperLink href="https://opensea.io/collection/haremsalphaog">Buy</UpperLink>
             <UpperLink href="/#roadmap">Roadmap</UpperLink>
             <UpperLink href="/#team">Team</UpperLink>
           </Nav>
           <Nav id="social-links" className="ml-5">
-            <UpperLink href="/"><i className="fa fa-youtube-play social-icon pr-lg-0"></i></UpperLink>
-            <UpperLink href="/"><i className="fa fa-instagram social-icon pr-lg-0"></i></UpperLink>
-            <UpperLink href="/"><i className="fa fa-discord-alt social-icon pr-lg-0"></i></UpperLink>
-            <UpperLink href="/"><i className="fa fa-twitter social-icon pr-lg-0"></i></UpperLink>
+            <UpperLink href="https://t.me/haremsglobal"><i class="fa fa-telegram" aria-hidden="true"></i></UpperLink>
+            <UpperLink href="https://discord.gg/xD993YTJpe"><i className="fa fa-discord-alt social-icon pr-lg-0"></i></UpperLink>
+            <UpperLink href="https://twitter.com/haremsnft/"><i className="fa fa-twitter social-icon pr-lg-0"></i></UpperLink>
           </Nav>
         </Navbar.Collapse>
     </DarkBar>
