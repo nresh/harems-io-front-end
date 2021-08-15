@@ -12,7 +12,7 @@ import React from "react"
   regular images (<img />) that pretty much does the same thing, but it is not
   installed in this app.
 */
-export default (props) => {
+const BackgroundBlock = (props) => {
   const fileName = props.src;
   const data = useStaticQuery(
     graphql`
@@ -51,3 +51,5 @@ export default (props) => {
     </BackgroundImage>
   )
 }
+
+export default BackgroundBlock;

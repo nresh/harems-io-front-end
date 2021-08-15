@@ -1,7 +1,7 @@
 import { Col, Row } from "react-bootstrap"
 import React from "react"
 
-export default ({ id, className, children }) => {
+const ContentBlock = ({ id, className, children }) => {
   return (
     <Row id={id} className="content-block border-bottom py-5">
       <Col>
@@ -10,3 +10,5 @@ export default ({ id, className, children }) => {
     </Row>
   )
 }
+
+export default ContentBlock;

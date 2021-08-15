@@ -5,7 +5,7 @@ import EmailForm from "./email-form"
 
 import styled from "@emotion/styled"
 
-export default ({ children }) => {
+const Footer = ({ children }) => {
   const Logo = styled.img`
     max-width: 160px;
   `
@@ -26,3 +26,5 @@ export default ({ children }) => {
       </Container>
   )
 }
+
+export default Footer;
