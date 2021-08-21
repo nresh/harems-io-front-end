@@ -4,7 +4,7 @@ import styled from "@emotion/styled"
 
 const NavBar = () => {
   const Logo = styled.img`
-    height: 45px;
+    height: 70px;
   `;
 
   const UpperLink = styled(Nav.Link)`
@@ -22,7 +22,7 @@ const NavBar = () => {
     <DarkBar className="p-xl-0" collapseOnSelect expand="lg" variant="dark">
         <Navbar.Brand href="/" className="d-contents py-0">
           <Logo
-            src={"Harems-2-small.png"}
+            src={"harems-logo-250-85s.gif"}
             className=""
             alt="Harems Logo"
           />
