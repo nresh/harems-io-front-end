@@ -11,6 +11,7 @@ import CallToActionBanner from "../components/call-to-action-banner"
 import IntroMDX from "../content/intro"
 import Info1MDX from "../content/info1"
 import Info2MDX from "../content/info2"
+import Info3MDX from "../content/info3"
 import GentlemansClubMDX from "../content/gentlemans-club"
 import RoadmapMDX from "../content/roadmap"
 import TeamMDX from "../content/team"
@@ -45,7 +46,15 @@ const SECTIONS = [
     subSections: [
       {
         component: TextImgSection,
-        attr: {markdown: Info2MDX, img: "11-small", hColors: ['#FFFF00', '#FFC000']}
+        attr: {markdown: Info2MDX, img: "11-small", hColors: ['#FFFF00']}
+      }
+    ]
+  },
+  { id:"info3",
+    subSections: [
+      {
+        component: TextImgSection,
+        attr: {markdown: Info3MDX, img: "benefactor-sultan", hColors: ['#FFC000']}
       }
     ]
   },
