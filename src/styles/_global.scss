@@ -25,6 +25,10 @@ $secondary-font-family: "Avenir Next";
   color: white;
 }
 
+.no-child-margin > * {
+  margin: 0;
+}
+
 .text-small {
   font-size: 0.6em;
 }
