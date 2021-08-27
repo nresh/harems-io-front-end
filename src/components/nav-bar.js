@@ -30,6 +30,7 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav">
           <Nav id="home-nav">
+          <UpperLink href="https://mint.harems.io/">Mint</UpperLink>
             <UpperLink href="https://opensea.io/collection/haremsalphaog">Buy</UpperLink>
             <UpperLink href="/#roadmap">Roadmap</UpperLink>
             <UpperLink href="/#team">Team</UpperLink>
