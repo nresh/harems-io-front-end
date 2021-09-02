@@ -10,14 +10,15 @@ import CallToActionBanner from "../components/call-to-action-banner"
 
 import IntroMDX from "../content/intro"
 import Info1MDX from "../content/info1"
-import Info2MDX from "../content/info2"
-import Info3MDX from "../content/info3"
+import TypesMDX from "../content/types"
+import LiveGirlsMDX from "../content/live-girls"
+import BenefactorsMDX from "../content/benefactors"
 import GentlemansClubMDX from "../content/gentlemans-club"
 import RoadmapMDX from "../content/roadmap"
 import TeamMDX from "../content/team"
 
 const SECTIONS = [
-  { id:"intro",
+  { id: "intro",
     subSections: [
       {
         component: TextImgSection,
@@ -26,7 +27,7 @@ const SECTIONS = [
       {
         component: CallToActionBanner,
         attr: {
-          id: "buy-on-open-sea",
+          id: "buy-on-open-sea-2",
           className: "blue-bg",
           text: <h2>MINT OUR HAREMS GIRLS NOW <br />COLLECTION ON OPEN SEA</h2>,
           cta: <Button href="https://mint.harems.io/" variant="primary" enabled><h1>Mint Now</h1></Button>
@@ -42,19 +43,27 @@ const SECTIONS = [
       }
     ]
   },
-  { id:"info2",
+  { id:"types",
     subSections: [
       {
         component: TextImgSection,
-        attr: {markdown: Info2MDX, img: "11-small", hColors: ['#FFFF00']}
+        attr: {markdown: TypesMDX, img: "Rarity types", hColors: ['#8FAADC'], imgType:"wideRightImg"}
       }
     ]
   },
-  { id:"info3",
+  { id:"live-girls",
     subSections: [
       {
         component: TextImgSection,
-        attr: {markdown: Info3MDX, img: "benefactor-sultan", hColors: ['#FFC000']}
+        attr: {markdown: LiveGirlsMDX, img: "Live Girls", hColors: ['#C709C7'], imgType: "markdownImg"}
+      }
+    ]
+  },
+  { id:"benefactors",
+    subSections: [
+      {
+        component: TextImgSection,
+        attr: {markdown: BenefactorsMDX, img: "Benefactors", hColors: ['#FFC000'], imgType: "markdownImg"}
       }
     ]
   },
@@ -70,7 +79,7 @@ const SECTIONS = [
     subSections: [
       {
         component: TextImgSection,
-        attr: {markdown: RoadmapMDX, img: "7-small", hColors: ['#C709C7']}
+        attr: {markdown: RoadmapMDX, img: "7-small", hColors: ['#FF99CC']}
       }
     ]
   },
@@ -86,11 +95,20 @@ const SECTIONS = [
 
 const HomePage = () => {
   return (
-    <Layout dark>
-      <BackgroundBlock className="align-items-end d-flex justify-content-center" src="home-bg" minHeight="90vh">
-        <CallToActionBanner className="black-bg" left={7} right={4} text={<h1>Get the Latest</h1>} cta={<EmailForm id="top-email-form" hideLabel />} />
+    <Layout dark title="Harems">
+      <BackgroundBlock className="align-items-end d-flex justify-content-center" src="home-bg-lounge" minHeight="90vh">
+
+        <CallToActionBanner
+          id="buy-on-open-sea-1"
+          className="blue-bg"
+          text={<h2>MINT OUR HAREMS GIRLS NOW <br />COLLECTION ON OPEN SEA</h2>}
+          cta={<Button href="https://mint.harems.io/" variant="primary" enabled><h1>Mint Now</h1></Button>}
+        />
+        {/**/}
+
       </BackgroundBlock>
-      <Container fluid className="black-bg border-top pt-4 text-left">
+      <CallToActionBanner className="black-bg border-bottom border-top" text={<h1>Get the Latest</h1>} cta={<EmailForm id="top-email-form" hideLabel />} ctaFirst />
+      <Container fluid className="black-bg pt-4 px-4 text-left">
         {
           SECTIONS.map((section) => {
             return(

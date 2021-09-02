@@ -5,7 +5,7 @@ import RasterImg from "./raster-img"
 
 import styled from "@emotion/styled"
 
-const TextImgSection = ({ markdown, img, hColors, children }) => {
+const TextImgSection = ({ markdown, img, hColors, imgType, children }) => {
   const Markdown = markdown;
   const Image = styled(RasterImg)`
     height: auto;
@@ -24,14 +24,30 @@ const TextImgSection = ({ markdown, img, hColors, children }) => {
     ${hStyles}
   `;
 
+  let markdownWidth = 7
+  let imageWidth = 4
+
+  switch (imgType) {
+    case 'markdownImg':
+      markdownWidth = 12
+      break;
+    case 'wideRightImg':
+      markdownWidth = 5
+      imageWidth = 6
+      break;
+    default:
+  }
+
   return (
     <StyledRow className="sub-block justify-content-center pb-4" >
-      <Col lg={7}>
+      <Col lg={markdownWidth}>
         <Markdown />
       </Col>
-      <Col lg={4} className="offset-lg-1">
-        <Image src={img} alt={img} />
-      </Col>
+      {
+        imgType === "markdownImg" || <Col lg={imageWidth} className="offset-lg-1">
+                                 <Image src={img} alt={img} />
+                               </Col>
+      }
     </StyledRow>
   )
 }
