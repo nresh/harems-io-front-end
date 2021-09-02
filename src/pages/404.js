@@ -3,7 +3,7 @@ import MissingPageMDX from "../content/missing"
 import Layout from "../components/layout"
 import React from "react"
 
-export default () => {
+const Page404 = () => {
   return (
     <Layout>
       <BackgroundBlock src="home-bg" minHeight="70vh">
@@ -12,3 +12,5 @@ export default () => {
     </Layout>
   )
 }
+
+export default Page404;

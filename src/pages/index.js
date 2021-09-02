@@ -28,8 +28,8 @@ const SECTIONS = [
         attr: {
           id: "buy-on-open-sea",
           className: "blue-bg",
-          text: <h2>BUY OUR ALPHA GIRL<br />COLLECTION ON OPEN SEA</h2>,
-          cta: <Button href="https://opensea.io/collection/haremsalphaog" variant="primary" enabled><h1>Buy Now</h1></Button>
+          text: <h2>MINT OUR HAREMS GIRLS NOW <br />COLLECTION ON OPEN SEA</h2>,
+          cta: <Button href="https://mint.harems.io/" variant="primary" enabled><h1>Mint Now</h1></Button>
         }
       }
     ]
@@ -46,7 +46,15 @@ const SECTIONS = [
     subSections: [
       {
         component: TextImgSection,
-        attr: {markdown: Info2MDX, img: "11-small", hColors: ['#FFFF00', '#FFC000']}
+        attr: {markdown: Info2MDX, img: "11-small", hColors: ['#FFFF00']}
+      }
+    ]
+  },
+  { id:"info3",
+    subSections: [
+      {
+        component: TextImgSection,
+        attr: {markdown: Info3MDX, img: "benefactor-sultan", hColors: ['#FFC000']}
       }
     ]
   },
@@ -76,7 +84,7 @@ const SECTIONS = [
   }
 ]
 
-export default () => {
+const HomePage = () => {
   return (
     <Layout dark>
       <BackgroundBlock className="align-items-end d-flex justify-content-center" src="home-bg" minHeight="90vh">
@@ -101,3 +109,5 @@ export default () => {
     </Layout>
   )
 }
+
+export default HomePage;

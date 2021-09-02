@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import React from "react"
 
-export default ({src}) => {
+const RasterImg = ({src}) => {
 
   const data = useStaticQuery(
     graphql`
@@ -28,3 +28,5 @@ export default ({src}) => {
 
   return <Img Tag="div" alt={src} fluid={image} />
 }
+
+export default RasterImg;

@@ -1,7 +1,7 @@
 import { Button, Col, Form, Row } from "react-bootstrap"
 import React from "react"
 
-export default ({ id, hideLabel, children }) => {
+const EmailForm = ({ id, hideLabel, children }) => {
   return (
     <Form id={id}>
       <Form.Group className="mb-3 text-lg-left" controlId="formBasicEmail">
@@ -21,3 +21,5 @@ export default ({ id, hideLabel, children }) => {
     </Form>
   )
 }
+
+export default EmailForm;

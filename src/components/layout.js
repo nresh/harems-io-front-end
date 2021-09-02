@@ -3,7 +3,7 @@ import Footer from "./footer"
 import Header from "./header"
 import React from "react"
 
-export default ({ dark, children }) => {
+const Layout = ({ dark, children }) => {
   const styles = {
     backgroundColor: dark ? "black" : "white",
     color: dark ? "white" : "black"
@@ -21,3 +21,5 @@ export default ({ dark, children }) => {
     </div>
   )
 }
+
+export default Layout;

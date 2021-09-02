@@ -5,9 +5,9 @@ import EmailForm from "./email-form"
 
 import styled from "@emotion/styled"
 
-export default ({ children }) => {
+const Footer = ({ children }) => {
   const Logo = styled.img`
-    max-width: 160px;
+    max-width: 200px;
   `
 
   return (
@@ -17,7 +17,7 @@ export default ({ children }) => {
             <EmailForm id="footer-email-form" />
           </Col>
           <Col className="center-content text-center" lg={4} sm={12}>
-            <Logo src={"Harems-2-small.png"} alt="Harems logo"/>
+            <Logo src={"harems-logo-250-85s.gif"} alt="Harems logo"/>
           </Col>
           <Col className="center-content text-center" lg={4} sm={12}>
             &#169; Harems.io {new Date().getFullYear()}
@@ -26,3 +26,5 @@ export default ({ children }) => {
       </Container>
   )
 }
+
+export default Footer;
