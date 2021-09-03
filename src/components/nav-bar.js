@@ -19,7 +19,7 @@ const NavBar = () => {
   `;
 
   return (
-    <DarkBar className="px-3" collapseOnSelect expand="lg" variant="dark">
+    <DarkBar className="px-3 p-xl-0" collapseOnSelect expand="lg" variant="dark">
         <Navbar.Brand href="/" className="d-contents py-0">
           <Logo
             src={"harems-logo-250-85s.gif"}
